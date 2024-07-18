@@ -49,7 +49,7 @@ jobs:
           fetch-depth: 1
 
       - name: Install Zarf
-        uses: defenseunicorns/setup-zarf@v1
+        uses: defenseunicorns/setup-zarf@v1.0.1
         with:
           version: v0.24.3
           download-init-package: true
