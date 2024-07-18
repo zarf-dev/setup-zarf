@@ -1,6 +1,6 @@
 # GitHub Action to Install and Setup Zarf
 
-Make [Zarf](https://github.com/defenseunicorns/zarf) available to your GitHub Actions workflows.
+Make [Zarf](https://github.com/zarf-dev/zarf) available to your GitHub Actions workflows.
 
 This action will optionally download a Zarf init package. To learn more about Zarf init packages and their use-cases, see the [Zarf docs](https://docs.zarf.dev/docs/user-guide/zarf-packages/the-zarf-init-package).
 
@@ -81,7 +81,7 @@ jobs:
 - Optional
 - Default: latest release
 - **_Note:_** Include the `v` in your version (e.g., `v0.24.3`)
-- Check out the [Zarf releases page](https://github.com/defenseunicorns/zarf/releases) to see available versions
+- Check out the [Zarf releases page](https://github.com/zarf-dev/zarf/releases) to see available versions
 
 ### download-init-package
 
