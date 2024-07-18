@@ -19,10 +19,10 @@ runs:
 
         # Use latest version if not specified
         if [ "${version}" == "" ]; then
-          version=$(curl -sIX HEAD https://github.com/defenseunicorns/zarf/releases/latest | grep -i ^location: | grep -Eo 'v[0-9]+.[0-9]+.[0-9]+')
+          version=$(curl -sIX HEAD https://github.com/zarf-dev/zarf/releases/latest | grep -i ^location: | grep -Eo 'v[0-9]+.[0-9]+.[0-9]+')
         fi
 
-        release_path="https://github.com/defenseunicorns/zarf/releases/download/${version}"
+        release_path="https://github.com/zarf-dev/zarf/releases/download/${version}"
 
         mkdir -p $target_dir
 
