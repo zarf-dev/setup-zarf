@@ -2,12 +2,12 @@
 
 Make [Zarf](https://github.com/zarf-dev/zarf) available to your GitHub Actions workflows.
 
-This action will optionally download a Zarf init package. To learn more about Zarf init packages and their use-cases, see the [Zarf docs](https://docs.zarf.dev/docs/user-guide/zarf-packages/the-zarf-init-package).
+This action will optionally download a Zarf init package. To learn more about Zarf init packages and their use-cases, see the [Zarf docs](https://docs.zarf.dev/ref/init-package/).
 
 ## Usage
 
 ```yaml
-uses: defenseunicorns/setup-zarf@v1
+uses: zarf-dev/setup-zarf@v1.0.1
 with:
   version: <version> # Optional. Defaults to latest.
   download-init-package: true # Optional. Defaults to false.
@@ -27,9 +27,9 @@ jobs:
           fetch-depth: 1
 
       - name: Install Zarf
-        uses: defenseunicorns/setup-zarf@v1
+        uses: zarf-dev/setup-zarf@v1.0.1
         with:
-          version: v0.24.3
+          version: v0.49.1
 
       - name: Create the package
         run: zarf package create --confirm
@@ -49,9 +49,9 @@ jobs:
           fetch-depth: 1
 
       - name: Install Zarf
-        uses: defenseunicorns/setup-zarf@v1.0.1
+        uses: zarf-dev/setup-zarf@v1.0.1
         with:
-          version: v0.24.3
+          version: v0.49.1
           download-init-package: true
 
       - name: Create the package

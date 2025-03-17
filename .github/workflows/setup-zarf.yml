@@ -35,7 +35,7 @@ jobs:
         uses: ./
         with:
           download-init-package: true
-          version: v0.24.3
+          version: v0.49.1
 
       - name: Zarf Version
         run: zarf version
@@ -50,7 +50,7 @@ jobs:
         run: zarf init --confirm
 
       - name: Deploy DOS Games
-        run: zarf package deploy sget://defenseunicorns/zarf-hello-world:$(uname -m) --confirm
+        run: zarf package deploy oci://ghcr.io/zarf-dev/packages/dos-games:1.1.0 --skip-signature-validation --confirm
 
       - name: List installed packages
         run: zarf package list
